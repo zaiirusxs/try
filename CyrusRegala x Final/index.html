@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's x Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="style.css"> 
+   
+</head>
+<body>
+    <header>
+        <img src="oq-removebg-preview.png" alt="McDonald's Logo" class="logo-image">
+    <div class="logo-text">McDonald's x Jujutsu Kaisen</div>
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('menu')">Happy Meal Menu</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <main id="content">
+
+        <section id="home">
+            <div class="hero">
+                <h1>Welcome to McDonald's x Jujutsu Kaisen</h1>
+                <p>Experience the ultimate crossover with exclusive Jujutsu Kaisen Happy Meals!</p>
+                <a href="#" onclick="showPage('menu')" class="cta-button">View Happy Meal Menu</a>
+            </div>
+            <section class="features">
+                <h2>Exclusive Offers</h2>
+                <div class="feature">
+                    <img src="24-removebg-preview.png" alt="Limited Edition Toys">
+                    <h3>Limited Edition Toys</h3>
+                    <p>Collect unique Jujutsu Kaisen toys with every Happy Meal.</p>
+                </div>
+                <div class="feature">
+                    <img src="24-removebg-preview (1).png" alt="Themed Meals">
+                    <h3>Themed Meals</h3>
+                    <p>Enjoy special themed meals inspired by your favorite characters.</p>
+                </div>
+                <div class="feature">
+                    <img src="23-removebg-preview.png" alt="Anime Merch">
+                    <h3>Anime Merch</h3>
+                    <p>Get exclusive Jujutsu Kaisen merchandise with your meal.</p>
+                </div>
+            </section>
+        </section>
+
+ 
+        <section id="about" style="display: none;">
+            <h1>About Us</h1>
+            <p>Welcome to McDonald's, where we bring you the best food experience combined with your favorite anime, Jujutsu Kaisen! Our mission is to provide delicious meals and exciting merchandise to our beloved customers. Join us in this exclusive crossover and enjoy the magic of Jujutsu Kaisen with every bite.</p>
+        </section>
+
+    
+        <section id="menu" style="display: none;">
+            <div class="menu-container">
+                <h1>Happy Meal Menu</h1>
+                </div>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="images__1_-removebg-preview.png" alt="Gojou's Special Combo">
+                    <div>
+                        <h2>Gojou's Special Combo</h2>
+                        <p>Enjoy a burger, fries, and a drink, plus a limited edition Gojou toy.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images-removebg-preview.png" alt="Itadori's Ultimate Feast">
+                    <div>
+                        <h2>Itadori's Ultimate Feast</h2>
+                        <p>A hearty meal with nuggets, fries, and a drink, including an Itadori toy.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="image3.jpg" alt="Fushiguro's Delight">
+                    <div>
+                        <h2>Fushiguro's Delight</h2>
+                        <p>A delicious meal featuring chicken sandwiches and fries with a Fushiguro toy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="contact" style="display: none;">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback, we'd love to hear from you! Please reach out to us at:</p>
+            <p>Email: support@mcdonalds.com</p>
+            <p>Phone: 1-800-MCD-HELP</p>
+            <p>Address: 123 McDonald's Lane, Foodville, USA</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 McDonald's Corporation. All rights reserved.</p>
+    </footer>
+    <script>
+         function showPage(pageId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+       }
+      
+        showPage('home');   
+    </script>
+</body>
+</html>
